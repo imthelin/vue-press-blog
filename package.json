@@ -1,0 +1,31 @@
+{
+  "name": "vue-press-blog",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imthelin/vue-press-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imthelin/vue-press-blog/issues"
+  },
+  "homepage": "https://github.com/imthelin/vue-press-blog#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "eslint": "^7.21.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "prettier": "^2.2.1",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-comment": "^0.7.3"
+  }
+}

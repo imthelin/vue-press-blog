@@ -1,0 +1,7 @@
+{
+  "name": "fizz",
+  "short_name": "blog",
+  "version": "1.0.0",
+  "description": "fizz的博客，记录前端",
+  "manifest_version": 2
+}
