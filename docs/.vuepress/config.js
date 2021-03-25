@@ -1,14 +1,14 @@
 /*
  * @Author: imthelin
  * @since: 2021-03-07 17:33:36
- * @lastTime: 2021-03-07 22:49:52
+ * @lastTime: 2021-03-25 12:33:31
  * @LastAuthor: Do not edit
  * @FilePath: /vue-press-blog/docs/.vuepress/config.js
  * @Description:
  */
 
 module.exports = {
-  title: 'fizz', // 设置网站标题
+  title: 'theLin', // 设置网站标题
   description: '个人博客',
   // 这是部署到github相关的配置
   base: '/blog/',
@@ -50,7 +50,8 @@ module.exports = {
           title: 'js',
           collapsable: false,
           children: [
-            { title: '原型', path: '/work/accumulate/js/' }
+            { title: '原型', path: '/work/accumulate/js/' },
+            { title: 'vue 插件', path: '/work/accumulate/js/vue-plugin' }
           ]
         },
         { title: 'html', link: '/work/accumulate/html/' },
