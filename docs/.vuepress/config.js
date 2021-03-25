@@ -1,7 +1,7 @@
 /*
  * @Author: imthelin
  * @since: 2021-03-07 17:33:36
- * @lastTime: 2021-03-25 12:33:31
+ * @lastTime: 2021-03-25 13:46:24
  * @LastAuthor: Do not edit
  * @FilePath: /vue-press-blog/docs/.vuepress/config.js
  * @Description:
@@ -29,7 +29,7 @@ module.exports = {
         text: '前端',
         link: '/work/accumulate/'
       },
-      { text: 'Node', link: '/work/node/' },
+      // { text: 'Node', link: '/work/node/' },
       { text: '算法', link: '/work/algorithm/' },
       {
         text: '工具',
@@ -48,10 +48,16 @@ module.exports = {
       '/work/accumulate/': [
         {
           title: 'js',
+          collapsable: true,
+          children: [
+            { title: '原型', path: '/work/accumulate/js/' }
+          ]
+        },
+        {
+          title: 'vue',
           collapsable: false,
           children: [
-            { title: '原型', path: '/work/accumulate/js/' },
-            { title: 'vue 插件', path: '/work/accumulate/js/vue-plugin' }
+            { title: 'vue 插件', path: '/work/accumulate/vue/vue-plugin' }
           ]
         },
         { title: 'html', link: '/work/accumulate/html/' },
