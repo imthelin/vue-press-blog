@@ -1,7 +1,7 @@
 <!--
  * @Author: imthelin
  * @since: 2021-03-26 11:53:10
- * @lastTime: 2021-03-26 13:34:26
+ * @lastTime: 2021-03-26 13:40:19
  * @LastAuthor: Do not edit
  * @FilePath: /vue-press-blog/docs/work/accumulate/js/throttle-debounce.md
  * @Description:
@@ -9,7 +9,7 @@
 
 ### 定义和作用
 
-首先需要明确的是，他们的目的都是用来节省不必要的函数开销。
+首先需要明确的是，他们的目的都是用来节省不必要的函数开销。他们都是依赖闭包的特性去做到这些事情的，保存一个局部的 timer 和 last 基准。
 
 防抖: 指定一个延迟时间 delay，在这个时间内多次触发一个函数，这个函数只会执行一次，并以最后一次触发时间为准，在 delay 事件后执行这个函数。
 
@@ -29,6 +29,7 @@
 function debounce(fn, delay) {
   let timer
   return function () {
+    // 打断上一次
     clearTimeout(timer)
     timer = null
     // 支持不定入参数，或者函数入参数定义为 ...args（es6 语法）
@@ -52,11 +53,14 @@ function throttle(fn, interval) {
     let self = this
     let args = [...arguments]
     if (last && last + interval > now) {
-      setTimeout(() => {
+      // 还没到时间，清理掉上次记录的，重新挂起, 保证最后一次的执行正常
+      clearTimeout(timer)
+      timer = setTimeout(() => {
         last = now
         fn.apply(self, args)
       }, interval)
     } else {
+      // 首次执行或者是超过了间隔时间 now > last + interval
       last = now
       fn.apply(self, args)
     }
