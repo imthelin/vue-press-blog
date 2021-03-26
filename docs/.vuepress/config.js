@@ -1,7 +1,7 @@
 /*
  * @Author: imthelin
  * @since: 2021-03-07 17:33:36
- * @lastTime: 2021-03-25 13:46:24
+ * @lastTime: 2021-03-26 11:53:06
  * @LastAuthor: Do not edit
  * @FilePath: /vue-press-blog/docs/.vuepress/config.js
  * @Description:
@@ -50,7 +50,7 @@ module.exports = {
           title: 'js',
           collapsable: true,
           children: [
-            { title: '原型', path: '/work/accumulate/js/' }
+            { title: '防抖和节流', path: '/work/accumulate/js/throttle-debounce' }
           ]
         },
         {
