@@ -1,7 +1,7 @@
 <!--
  * @Author: imthelin
  * @since: 2021-03-26 15:02:28
- * @lastTime: 2021-03-27 16:09:31
+ * @lastTime: 2021-03-27 16:10:34
  * @LastAuthor: Do not edit
  * @FilePath: /vue-press-blog/docs/work/accumulate/js/map-vs-object.md
  * @Description:
@@ -96,5 +96,5 @@ map delete: 0.0048828125 ms
 
 看到这里或许有同学要说，这么做有什么意义？
 
-我只能说每件事情做到极致都是需要去优化细节的，仅仅关注这件事或许的确没有意义，但是极少成多的细节，决定了在某个行业你能到达的高度。
+我只能说每件事情做到极致都是需要去优化细节的，仅仅关注这件事或许的确没有意义，但是积少成多的细节，决定了在某个行业你能到达的高度。
 
